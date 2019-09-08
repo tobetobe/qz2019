@@ -9,8 +9,8 @@ class Father {
 }
 
 class Son extends Father {
-  constructor (name) {
-    super(name)
+  constructor (...args) {
+    super(...args)
   }
   say () {
     super.walk()
@@ -28,3 +28,14 @@ var son = new Son('wei')
 son.say()
 //walk Son { name: 'wei', sex: 'man' }
 //son says wei
+
+
+class GreatArray extends Array {
+    print () {
+        console.log('## print', Array.prototype)
+    }
+}
+
+var _GreatArray = new GreatArray ()
+
+_GreatArray.print()
