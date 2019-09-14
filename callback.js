@@ -20,6 +20,7 @@ Event.on = function (signal, callback) {
     console.log(signal)
     console.log(typeof callback)
     callback()
+    console.log('just callback!')
 }
 }
 
